@@ -17,8 +17,8 @@ The default values of the environment variables for the Sentinel are as followin
 
 * SENTINEL_QUORUM: 2 (Decides how many sentinel instances need to be up and have to agree.
 This number must be lower than the amount of sentinels started.)
-* SENTINEL_DOWN_AFTER: 30000 (How long should a master be down till it is concidered as Subjectively Down)
-* SENTINEL_FAILOVER: 180000 (Used as a delay for a Sentinel that tried to failover a master, but was voted against to try again immediately. Also used as a max time to acknowledge the slave as new master. Otherwise the failover will be canceled.)
+* SENTINEL_DOWN_AFTER: 30000 (How long should a master be down till it is considered as Subjectively Down)
+* SENTINEL_FAILOVER: 180000 (Used as a delay for a Sentinel that tried to failover a master, but was voted against to try again immediately. Also used as a max time to acknowledge the replica as new master. Otherwise the failover will be canceled.)
 
 They can be customized in the `docker-compose.yml` environment section.
 
